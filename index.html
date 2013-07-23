@@ -55,10 +55,14 @@
                 font-size: 24px;
                 line-height: 30px;
             }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
 
             /* Video pitch and Action */
             .pitch {
-                padding:2.5% 0%;
+                padding: 2.5% 0%;
             }
             .order { 
                 padding: 2% 0%;            
@@ -82,6 +86,16 @@
             }
             .asset {
                 padding: 2.5% 0%;
+            }
+            .footer {
+                color: #cccccc;
+                text-align: center;
+            }
+            .foorter p {
+                font-size:11 px;
+            }
+            .footer a {
+                color: #ccccff;
             }
                    
         </style>
@@ -160,15 +174,16 @@
                             </div>
                         </diV>
                     </div>
-                </div>
-                <div class="span10 offset1">
-                    <!-- Bootstrap progress bar -->
-                    <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-                    <div class="thermometer progress active">
-                        <div class="bar bar-success" style="width: 60%;"></div>
-                        <div class="bar bar-warning" style="width: 50%;"></div>                       
+                
+                    <div class="span10 offset1">
+                        <!-- Bootstrap progress bar -->
+                        <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+                        <div class="thermometer progress active">
+                            <div class="bar bar-success" style="width: 60%;"></div>
+                            <div class="bar bar-warning" style="width: 50%;"></div>                       
+                        </div>
                     </div>
-                    <div class="span6 offset 3 order">
+                    <div class="span6 offset3 order">
                         <!-- Standard Bootstrap button. -->
                         <!-- http://twitter.github.io/boostrap/base-css.html#buttons -->
                         <button class="btn btn-success btn-large">Preorder</button>
@@ -176,7 +191,7 @@
                     <div class="span8 offset2 social">
                         <!-- Social buttons are not included in default Bootstrap. -->
                         <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-                        <button class="btn btn-twitter"><i class="icon-twitter"</i> | Twitter</button>
+                        <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
                         <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>                        
                     </div>
                 </div>
