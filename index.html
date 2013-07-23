@@ -75,14 +75,22 @@
             }
 
             /* Marketing Copy and Footer */
-                        
+            .copy {
+                padding-top: 2.5%;
+                padding-bottom: 2.5%;
+                text-align: justify;
+            }
+            .asset {
+                padding: 2.5% 0%;
+            }
+                   
         </style>
     </head>
     <body>
 
 
         <!-- Mobile-friendly navbar adapted from example. -->
-        <!-- http://twitter.github.com/bootstrap/examples/starter-template.html -->
+        <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
@@ -168,21 +176,49 @@
                     <div class="span8 offset2 social">
                         <!-- Social buttons are not included in default Bootstrap. -->
                         <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-                        <button class="btn btn-twitter"><i class="icon-twitter>"</i> | Twitter</button>
+                        <button class="btn btn-twitter"><i class="icon-twitter"</i> | Twitter</button>
                         <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>                        
                     </div>
                 </div>
             </div>
-            <div class="row section1">
-                <div class="span12">
-                    Marketing Section 1
+
+            <!-- Beyond this part the marketing copy begins. -->
+            <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+            <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+            <!-- http://placehold.it -->
+            <div class="row-fluid section1">
+                <div class="span5 offset1 asset">
+                    <img class="img-polaroid" src="http://placehold.it/480x300">
+                </div>
+                <div class="span5 copy">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                    deserunt mollit anim id est laborum.                    
+                    </p>
                 </div>
             </div>
-            <div class="row section2">
-                <div class="span12">
-                    Marketing Section 2
+
+            <div class="row-fluid section2">
+                <div class="span5 offset1 copy copy-right">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                    deserunt mollit anim id est laborum.
+                    </p>
                 </div>
+                <div class="span5 asset">
+                    <img class="img-polaroid" src="http://placehold.it/480x300">
+                </div>                
             </div>
+
+            <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
             <div class="row faq">
                 <div class="span12">
                     FAQ
